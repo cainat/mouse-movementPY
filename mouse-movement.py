@@ -4,8 +4,8 @@ import pyautogui
 pyautogui.FAILSAFE = False
 
 screenSize = pyautogui.size()
-height = screenSize.height
-width = screenSize.width
+height = screenSize[0]
+width = screenSize[1]
 
 while True:
     y = randrange(height)
